@@ -80,7 +80,6 @@ ax[0].tick_params(axis='x', labelsize=20)
 ax[0].set_ylim(0, sum_order_items_df["total_count"].max() * 1.1)  # Memberikan ruang di atas maksimum
  
 sns.barplot(x="hour", y="total_count", data=sum_order_items_df.sort_values(by="hour", ascending=True).head(5), palette="YlGnBu", ax=ax[1])
-ax[1].legend_.remove()  # Menghapus legend karena tidak diperlukan
 ax[1].set_xlabel("Jam (AM)", fontsize=24)
 ax[1].set_ylabel("Jumlah Penyewaan", fontsize=24)
 ax[1].set_title("Jam dengan Penyewa Sepeda Terdikit", loc="center", fontsize=26)
