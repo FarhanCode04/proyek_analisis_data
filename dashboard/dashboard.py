@@ -117,7 +117,7 @@ ax.legend()
 st.pyplot(fig)
 
 
-st.subheader("Frekuensi peminjaman sepeda pada setia musim")
+st.subheader("Frekuensi peminjaman sepeda pada setiap musim")
 season_counts = day.groupby("season", observed=False)["total_count"].sum()
 
 # Warna untuk setiap musim
